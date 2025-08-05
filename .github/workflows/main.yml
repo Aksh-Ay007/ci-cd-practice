@@ -1,16 +1,17 @@
-
-name:CICD pipeline learning
+name: CI/CD pipeline learning
 
 on:
   push:
-    branches:["main"]
-     
+    branches:
+      - main
   pull_request:
-    branches:["main"]
+    branches:
+      - main
 
-
-jobs:  build:
+jobs:
+  build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -23,6 +24,7 @@ jobs:  build:
       - name: Install dependencies
         run: npm install
 
+  
       - name: Run tests
         run: npm test
 
