@@ -5,7 +5,7 @@ function App() {
   return (
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
       <h1>React CI/CD Demo</h1>
-      <Message text="hello Welcome to the CI/CD pipeline demo app!" />
+      <Message text="hai hello Welcome to the CI/CD pipeline demo app!" />
     </div>
   );
 }
